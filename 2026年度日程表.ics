@@ -1,8 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Limber//2026年度全轨日程//CN
+PRODID:-//Limber//2026Schedule//CN
 X-WR-CALNAME:Limber 2026 全轨日程
-X-WR-CALDESC:考公+星龙+习惯+积累——全轨道年度时间管理
+X-WR-CALDESC:考公+星龙+习惯+积累
 CALSCALE:GREGORIAN
 BEGIN:VTIMEZONE
 TZID:Asia/Shanghai
@@ -14,16 +14,12 @@ TZOFFSETTO:+0800
 END:STANDARD
 END:VTIMEZONE
 
-# ============================================================
-# 每日基础块
-# ============================================================
-
 BEGIN:VEVENT
 SUMMARY:起床 · 准备刷题
 DTSTART:20260525T063000
 DTEND:20260525T070000
 RRULE:FREQ=DAILY
-DESCRIPTION:洗漱、喝水、醒脑\n7:00 准时坐下
+DESCRIPTION:洗漱、喝水、醒脑，7点准时坐下
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -32,11 +28,11 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 准备入睡 · 放下手机
+SUMMARY:准备入睡 · 放下手机
 DTSTART:20260525T223000
 DTEND:20260525T230000
 RRULE:FREQ=DAILY
-DESCRIPTION:手机放远、灯光调暗\n不反思、不刷题、不回消息
+DESCRIPTION:手机放远、灯光调暗，不反思不刷题不回消息
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -45,11 +41,11 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 熄灯睡觉
+SUMMARY:熄灯睡觉
 DTSTART:20260525T230000
 DTEND:20260525T233000
 RRULE:FREQ=DAILY
-DESCRIPTION:闭眼睡觉\n周日可放宽至24:00
+DESCRIPTION:闭眼睡觉，周日可放宽至24:00
 BEGIN:VALARM
 TRIGGER:-PT2M
 ACTION:DISPLAY
@@ -57,17 +53,12 @@ DESCRIPTION:熄灯
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 考公 · 早间深度块（周一至六 7:00-8:30）
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:🔴 申论小题：写+改
+SUMMARY:申论小题：写+改
 DTSTART:20260525T070000
 DTEND:20260525T083000
 RRULE:FREQ=WEEKLY;BYDAY=MO,WE
-DESCRIPTION:写1篇 → 对照答案逐句改 → 再写一遍 → 记录卡点\n题型轮转：概括→分析→对策
-LOCATION:书桌
+DESCRIPTION:写1篇 → 对照答案逐句改 → 再写一遍 → 记录卡点（题型：概括→分析→对策）
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -76,12 +67,11 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 行测专项突破
+SUMMARY:行测专项突破
 DTSTART:20260526T070000
 DTEND:20260526T083000
 RRULE:FREQ=WEEKLY;BYDAY=TU,TH
-DESCRIPTION:弱项模块集中打\n先学方法 → 做专项题组 → 分析错因 → 再做一组
-LOCATION:书桌
+DESCRIPTION:弱项模块集中打：先学方法→做专项题组→分析错因→再做一组
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -90,12 +80,11 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 申论大作文（隔周）/ 申论小题
+SUMMARY:申论大作文/申论小题
 DTSTART:20260529T070000
 DTEND:20260529T083000
 RRULE:FREQ=WEEKLY;BYDAY=FR
-DESCRIPTION:大作文周：写框架+论据\n非大作文周：追加一篇小题
-LOCATION:书桌
+DESCRIPTION:大作文周：写框架+论据。非大作文周：追加一篇小题
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -104,12 +93,11 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 行测套题/模考
+SUMMARY:行测套题/模考
 DTSTART:20260530T070000
 DTEND:20260530T090000
 RRULE:FREQ=WEEKLY;BYDAY=SA
-DESCRIPTION:半套行测（严格计时）\n每两周一次完整模考（行测+申论）
-LOCATION:书桌
+DESCRIPTION:半套行测严格计时，每两周一次完整模考（行测+申论）
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -117,17 +105,12 @@ DESCRIPTION:行测套题，计时开始
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 周日晚间 · 周复盘 + 明日计划
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:🌱 自媒体内容创作
+SUMMARY:自媒体内容创作
 DTSTART:20260531T080000
 DTEND:20260531T093000
 RRULE:FREQ=WEEKLY;BYDAY=SU
-DESCRIPTION:睡到自然醒后的第一个整块时间\n写点什么——300字草稿也算\n选题：备考日常/项目管理方法/旧录音带觉察
-LOCATION:书桌/沙发
+DESCRIPTION:睡到自然醒后的第一个整块时间。写点什么——300字草稿也算。选题：备考日常/项目管理方法/旧录音带觉察
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -136,11 +119,11 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 周复盘 · 四制回顾
+SUMMARY:周复盘 · 四制回顾
 DTSTART:20260531T200000
 DTEND:20260531T210000
 RRULE:FREQ=WEEKLY;BYDAY=SU
-DESCRIPTION:🗂️ 项目：逐项追问进度+卡点\n📋 习惯：打卡数据填表，趋势↗→↘\n👁️ 觉察：旧模式触发几次？叫停几次？\n🌱 积累：还在做吗？有产出吗？\n→ 写入周规划回顾区\n→ 口述明日计划
+DESCRIPTION:项目追问进度+卡点，习惯打卡数据填表，觉察旧模式触发次数，积累看板扫一眼。写入周规划回顾区，口述明日计划
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -148,16 +131,12 @@ DESCRIPTION:准备做周复盘
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 🟡 运动（每周2次）
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:🟡 运动 30min（工作日）
+SUMMARY:运动 30min（工作日）
 DTSTART:20260528T190000
 DTEND:20260528T193000
 RRULE:FREQ=WEEKLY;BYDAY=TH
-DESCRIPTION:快走/瑜伽跟练/跳操\n不求强度，求"做了"\n可以和男朋友一起
+DESCRIPTION:快走/瑜伽跟练/跳操都算。不求强度求"做了"，可以和男朋友一起
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -166,11 +145,11 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🟡 运动（周末户外）
+SUMMARY:运动（周末户外）
 DTSTART:20260530T100000
 DTEND:20260530T113000
 RRULE:FREQ=WEEKLY;BYDAY=SA
-DESCRIPTION:徒步/户外/长时间运动\n下雨或太累→换周日
+DESCRIPTION:徒步/户外/长时间运动，下雨或太累换周日
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -178,16 +157,12 @@ DESCRIPTION:准备出门运动
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 🟢 英语（每周3次 · 一三五晚）
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:🟢 英语 20min
+SUMMARY:英语 20min
 DTSTART:20260525T210000
 DTEND:20260525T212000
 RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR
-DESCRIPTION:听力/口语/播客/5个单词 都算\n底线：10分钟也算做了\n累了跳过，周末补一次
+DESCRIPTION:听力/口语/播客/5个单词都算。底线10分钟。累了跳过，周末补一次
 BEGIN:VALARM
 TRIGGER:-PT5M
 ACTION:DISPLAY
@@ -195,33 +170,11 @@ DESCRIPTION:英语时间，15-20分钟
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 📋 月度复盘
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:📋 月度复盘
-DTSTART:20260531T100000
-DTEND:20260531T113000
-RRULE:FREQ=MONTHLY;BYMONTHDAY=28,29,30,31
-DESCRIPTION:各轨道进度检查\n习惯打卡月度总计+填月追踪表\n积累看板扫一眼\n下月计划调整\n写月末回顾区
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:明天做月度复盘
-END:VALARM
-END:VEVENT
-
-# ============================================================
-# 🗂️ 考公 · 关键里程碑（一次性事件）
-# ============================================================
-
-BEGIN:VEVENT
-SUMMARY:🔴 行测摸底 + 申论开写
+SUMMARY:行测摸底 + 申论开写
 DTSTART:20260526T070000
 DTEND:20260526T083000
-DESCRIPTION:行测：做一套真题，逐模块统计正确率+用时\n申论：写第一篇小题+改3遍\n\n这是数据收集，不是考试——不判好坏，先建立基线
-LOCATION:书桌
+DESCRIPTION:行测：做一套真题，逐模块统计正确率+用时。申论：写第一篇小题+改3遍。这是数据收集不是考试——不判好坏先建立基线
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -230,10 +183,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 弱项Top2定位 + 专项计划
+SUMMARY:弱项Top2定位 + 专项计划
 DTSTART:20260528T070000
 DTEND:20260528T083000
-DESCRIPTION:根据5/26摸底结果\n确定行测弱项Top2\n制定6月专项突破计划
+DESCRIPTION:根据5/26摸底结果，确定行测弱项Top2，制定6月专项突破计划
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
@@ -242,81 +195,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 6月月度复盘 + 第一次基线模考
-DTSTART:20260628T070000
-DTEND:20260628T120000
-DESCRIPTION:上午：完整模考（行测+申论）\n下午：逐模块分析正确率+用时\n建立2026备考基线分数
-LOCATION:书桌
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:明天第一次基线模考
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:📋 第二次模考
-DTSTART:20260726T070000
-DTEND:20260726T120000
-DESCRIPTION:行测+申论完整模考\n检验暑期第一个月效果\n对比6月基线
-LOCATION:书桌
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:明天第二次模考
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:📋 第三次模考
-DTSTART:20260830T070000
-DTEND:20260830T120000
-DESCRIPTION:行测+申论完整模考\n检验暑期两个月突破效果\n确认各模块是否达标
-LOCATION:书桌
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:明天第三次模考
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:📋 第四次模考 · 决定冲刺策略
-DTSTART:20260927T070000
-DTEND:20260927T120000
-DESCRIPTION:行测+申论完整模考\n根据成绩决定冲刺阶段重点\n哪些模块还要打？哪些保住即可？
-LOCATION:书桌
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:明天第四次模考，决定冲刺策略
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-SUMMARY:📋 第五次模考
-DTSTART:20261025T070000
-DTEND:20261025T120000
-DESCRIPTION:行测+申论完整模考\n检验提速效果\n确认110分钟做完行测
-LOCATION:书桌
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:明天第五次模考
-END:VALARM
-END:VEVENT
-
-# ============================================================
-# 🗂️ 星龙草业 · 关键里程碑（一次性事件）
-# ============================================================
-
-# --- 基地东侧20000㎡ · 5月底冲刺（仅剩7天） ---
-
-BEGIN:VEVENT
-SUMMARY:🔴 基地：平地机整地
+SUMMARY:基地：平地机整地
 DTSTART:20260525T080000
 DTEND:20260525T090000
-DESCRIPTION:工序1/4：平地机整地\n东侧20000㎡，今天必须完成\n否则后续全部挤压
+DESCRIPTION:工序1/4：平地机整地，东侧20000㎡今天必须完成
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
@@ -325,10 +207,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 基地：进沙子
+SUMMARY:基地：进沙子
 DTSTART:20260527T080000
 DTEND:20260527T090000
-DESCRIPTION:工序2/4：沙料进场\n整地完成后紧接着进沙
+DESCRIPTION:工序2/4：沙料进场，整地完成后紧接着进沙
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -337,10 +219,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 基地：平沙子
+SUMMARY:基地：平沙子
 DTSTART:20260529T080000
 DTEND:20260529T090000
-DESCRIPTION:工序3/4：推平沙层\n沙料铺匀、整平
+DESCRIPTION:工序3/4：推平沙层，沙料铺匀整平
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -349,10 +231,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 基地：种草根
+SUMMARY:基地：种草根
 DTSTART:20260530T080000
 DTEND:20260530T090000
-DESCRIPTION:工序4/4：草根种植\n最后一步，种完即完工
+DESCRIPTION:工序4/4：草根种植，最后一步种完即完工
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -361,10 +243,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 星龙：水电改造完成 + 双创材料清单 + 人事管理制度
+SUMMARY:星龙：水电改造完成 + 双创材料清单 + 人事管理制度
 DTSTART:20260530T170000
 DTEND:20260530T180000
-DESCRIPTION:三线同时收：\n①办公室水电改造完成\n②双创材料清单梳理完毕（有什么/缺什么）\n③人事管理制度初稿完成
+DESCRIPTION:三线同时收：办公室水电改造完成；双创材料清单梳理完毕（有什么/缺什么）；人事管理制度初稿完成
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -373,10 +255,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 基地东侧20000㎡完工验收
+SUMMARY:基地东侧20000㎡完工验收
 DTSTART:20260531T080000
 DTEND:20260531T090000
-DESCRIPTION:东侧20000㎡建设完成\n验收：整地/沙层/草根种植\n5月底关闭
+DESCRIPTION:东侧20000㎡建设完成，验收：整地/沙层/草根种植，5月底关闭
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -384,13 +266,11 @@ DESCRIPTION:明天基地东侧完工验收
 END:VALARM
 END:VEVENT
 
-# --- 6月 ---
-
 BEGIN:VEVENT
-SUMMARY:🔴 星龙：地面完工 + 双创材料归集
+SUMMARY:星龙：地面完工 + 双创材料归集
 DTSTART:20260606T170000
 DTEND:20260606T180000
-DESCRIPTION:①办公室地面完工\n②双创已有材料归集+缺口清单明确
+DESCRIPTION:办公室地面完工；双创已有材料归集+缺口清单明确
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -399,10 +279,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 星龙：墙面完工 + 双创缺口补齐
+SUMMARY:星龙：墙面完工 + 双创缺口补齐
 DTSTART:20260613T170000
-DTEND:20260613T170000
-DESCRIPTION:①办公室墙面完工\n②双创缺口材料补充完成
+DTEND:20260613T180000
+DESCRIPTION:办公室墙面完工；双创缺口材料补充完成
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -411,10 +291,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 星龙：灯具五金 + 双创初稿
+SUMMARY:星龙：灯具五金 + 双创初稿
 DTSTART:20260620T170000
 DTEND:20260620T180000
-DESCRIPTION:①灯具+五金安装完成\n②双创申报材料初稿完成
+DESCRIPTION:灯具+五金安装完成；双创申报材料初稿完成
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -423,10 +303,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 星龙：软装到位 + 双创提交 + 报销走完
+SUMMARY:星龙：软装到位 + 双创提交 + 报销走完
 DTSTART:20260627T170000
 DTEND:20260627T180000
-DESCRIPTION:①办公室软装到位\n②双创材料终稿+盖章+提交\n③全部报销走完
+DESCRIPTION:办公室软装到位；双创材料终稿+盖章+提交；全部报销走完
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -435,10 +315,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 星龙：装修完工验收 + 双创归档
+SUMMARY:星龙：装修完工验收 + 双创归档
 DTSTART:20260630T170000
 DTEND:20260630T180000
-DESCRIPTION:★ 6月底双线关闭 ★\n①办公室装修完工验收\n②双创材料归档完毕
+DESCRIPTION:6月底双线关闭：办公室装修完工验收；双创材料归档完毕
 BEGIN:VALARM
 TRIGGER:-P2D
 ACTION:DISPLAY
@@ -446,13 +326,11 @@ DESCRIPTION:2天后6月底装修验收+双创归档
 END:VALARM
 END:VEVENT
 
-# --- 财务 ---
-
 BEGIN:VEVENT
-SUMMARY:💰 保险+应急金：方案研究
+SUMMARY:保险+应急金：方案研究
 DTSTART:20260711T090000
 DTEND:20260711T120000
-DESCRIPTION:对比3家重疾险+医疗险+意外险\n计算应急金缺口\n开单独储蓄账户\n\n7-8月任选一个周末上午完成
+DESCRIPTION:对比3家重疾险+医疗险+意外险，计算应急金缺口，开单独储蓄账户。7-8月任选一个周末上午完成
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -460,16 +338,11 @@ DESCRIPTION:明天安排保险研究
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 🟡 制度建设 · 每周推进提醒
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:📋 制度建设：人事管理制度
+SUMMARY:制度建设：人事管理制度
 DTSTART:20260525T090000
 DTEND:20260525T093000
-RRULE:FREQ=WEEKLY;COUNT=1
-DESCRIPTION:W22 · 本周完成人事管理制度\n覆盖：岗位职责/考勤/请假/试用期转正/离职交接
+DESCRIPTION:W22 本周完成人事管理制度：岗位职责/考勤/请假/试用期转正/离职交接
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
@@ -478,10 +351,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 制度建设：采购审批与验收制度
+SUMMARY:制度建设：采购审批与验收制度
 DTSTART:20260601T090000
 DTEND:20260601T093000
-DESCRIPTION:W23 · 本周完成采购审批与验收制度\n已有框架（星龙草业.md第4节），转正式文档+台账模板
+DESCRIPTION:W23 本周完成采购审批与验收制度（已有框架转正式文档+台账模板）
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
@@ -490,10 +363,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 制度建设：合同与资料归档规则
+SUMMARY:制度建设：合同与资料归档规则
 DTSTART:20260608T090000
 DTEND:20260608T093000
-DESCRIPTION:W24 · 本周完成合同与资料归档规则\n命名口径/目录结构/归档要求/齐全性检查清单
+DESCRIPTION:W24 本周完成合同与资料归档规则：命名口径/目录结构/归档要求/齐全性检查清单
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
@@ -502,10 +375,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 制度建设：外包/施工变更与验收制度
+SUMMARY:制度建设：外包/施工变更与验收制度
 DTSTART:20260615T090000
 DTEND:20260615T093000
-DESCRIPTION:W25 · 本周完成外包/施工变更与验收制度\n变更控制流程/验收标准/付款节点/留痕要求
+DESCRIPTION:W25 本周完成外包/施工变更与验收制度：变更控制流程/验收标准/付款节点/留痕要求
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
@@ -514,10 +387,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 制度建设：现场安全与隐患整改
+SUMMARY:制度建设：现场安全与隐患整改
 DTSTART:20260622T090000
 DTEND:20260622T093000
-DESCRIPTION:W26 · 本周完成现场安全与隐患整改记录制度\n安全检查清单/隐患台账/整改闭环/责任人
+DESCRIPTION:W26 本周完成现场安全与隐患整改记录制度：安全检查清单/隐患台账/整改闭环/责任人
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
@@ -526,10 +399,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 制度建设：双创补贴项目管理流程
+SUMMARY:制度建设：双创补贴项目管理流程
 DTSTART:20260629T090000
 DTEND:20260629T093000
-DESCRIPTION:W27 · 本周完成双创补贴项目管理流程\n机会识别→立项→材料→提交→跟进→拨付→归档
+DESCRIPTION:W27 本周完成双创补贴项目管理流程：机会识别→立项→材料→提交→跟进→拨付→归档
 BEGIN:VALARM
 TRIGGER:-PT30M
 ACTION:DISPLAY
@@ -537,15 +410,84 @@ DESCRIPTION:本周制度：双创补贴流程
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 📋 季度复盘
-# ============================================================
+BEGIN:VEVENT
+SUMMARY:月度复盘
+DTSTART:20260531T100000
+DTEND:20260531T113000
+RRULE:FREQ=MONTHLY;BYMONTHDAY=28,29,30,31
+DESCRIPTION:各轨道进度检查，习惯打卡月度总计+填月追踪表，积累看板扫一眼，下月计划调整，写月末回顾区
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:明天做月度复盘
+END:VALARM
+END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 Q2 季度复盘
+SUMMARY:6月月度复盘 + 第一次基线模考
+DTSTART:20260628T070000
+DTEND:20260628T120000
+DESCRIPTION:上午完整模考（行测+申论），下午逐模块分析正确率+用时，建立2026备考基线分数
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:明天第一次基线模考
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:第二次模考
+DTSTART:20260726T070000
+DTEND:20260726T120000
+DESCRIPTION:行测+申论完整模考，检验暑期第一个月效果，对比6月基线
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:明天第二次模考
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:第三次模考
+DTSTART:20260830T070000
+DTEND:20260830T120000
+DESCRIPTION:行测+申论完整模考，检验暑期两个月突破效果，确认各模块是否达标
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:明天第三次模考
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:第四次模考 · 决定冲刺策略
+DTSTART:20260927T070000
+DTEND:20260927T120000
+DESCRIPTION:行测+申论完整模考，根据成绩决定冲刺阶段重点：哪些模块还要打？哪些保住即可？
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:明天第四次模考，决定冲刺策略
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:第五次模考
+DTSTART:20261025T070000
+DTEND:20261025T120000
+DESCRIPTION:行测+申论完整模考，检验提速效果，确认110分钟做完行测
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:明天第五次模考
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:Q2 季度复盘
 DTSTART:20260628T140000
 DTEND:20260628T153000
-DESCRIPTION:检查Q2关键结果：\n□ 基地基础设施完工？\n□ 每日刷题习惯已固化？\n□ 第一个内容已发出？\n□ 成功叫停旧模式≥5次？\n□ 23:00前睡成为常态？\n→ 填写Q2末检查清单
+DESCRIPTION:检查Q2关键结果：基地完工？刷题习惯固化？第一个内容发出？叫停旧模式≥5次？23点前睡常态化？填写Q2末检查清单
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -554,10 +496,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:📋 Q3 季度复盘
+SUMMARY:Q3 季度复盘
 DTSTART:20260927T140000
 DTEND:20260927T153000
-DESCRIPTION:检查Q3关键结果\n评估冲刺阶段策略调整
+DESCRIPTION:检查Q3关键结果，评估冲刺阶段策略调整
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -565,16 +507,11 @@ DESCRIPTION:明天Q3季度复盘
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 🔴 考前冲刺 · 11月起每周六模考
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:🔴 冲刺模考 Week1
+SUMMARY:冲刺模考 Week1
 DTSTART:20261107T070000
 DTEND:20261107T120000
-DESCRIPTION:全真模拟：行测+申论\n严格计时，模拟考场环境\n考后逐模块分析
-LOCATION:书桌
+DESCRIPTION:全真模拟：行测+申论，严格计时模拟考场环境，考后逐模块分析
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -583,11 +520,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 冲刺模考 Week2
+SUMMARY:冲刺模考 Week2
 DTSTART:20261114T070000
 DTEND:20261114T120000
-DESCRIPTION:全真模拟：行测+申论\n重点：时间控制+心态维稳
-LOCATION:书桌
+DESCRIPTION:全真模拟：行测+申论，重点时间控制+心态维稳
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -596,11 +532,10 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-SUMMARY:🔴 冲刺模考 Week3
+SUMMARY:冲刺模考 Week3
 DTSTART:20261121T070000
 DTEND:20261121T120000
-DESCRIPTION:全真模拟：行测+申论\n最后一次完整模考\n之后只保持手感
-LOCATION:书桌
+DESCRIPTION:全真模拟：行测+申论，最后一次完整模考，之后只保持手感
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -608,15 +543,11 @@ DESCRIPTION:明天最后一次冲刺模考
 END:VALARM
 END:VEVENT
 
-# ============================================================
-# 📋 年度复盘
-# ============================================================
-
 BEGIN:VEVENT
-SUMMARY:📋 2026 年度复盘 + 2027 规划
+SUMMARY:2026 年度复盘 + 2027 规划
 DTSTART:20261227T100000
 DTEND:20261227T160000
-DESCRIPTION:全天年度大复盘：\n①各轨道全年回顾（🗂️📋👁️🌱）\n②习惯打卡年度总计\n③2026规划完成率\n④2027年度规划初稿\n⑤人生愿景对齐检查
+DESCRIPTION:全天年度大复盘：各轨道全年回顾（项目/习惯/觉察/积累），习惯打卡年度总计，2026规划完成率，2027年度规划初稿，人生愿景对齐检查
 BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
